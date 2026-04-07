@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aqoonside Web | Professional Frontend</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-gray-100 text-gray-800 transition-colors duration-300" id="body">
+
+<!-- NAVIGATION -->
+<nav class="bg-white dark:bg-gray-900 shadow p-4 flex justify-between items-center fixed w-full z-50 top-0">
+  <div class="text-xl font-bold flex items-center space-x-2">
+    <i class="fas fa-id-card text-blue-500"></i><span>Aqoonside Web</span>
+  </div>
+  <ul class="flex space-x-6 items-center">
+    <li><a href="#home" class="hover:text-blue-500"><i class="fas fa-home"></i> Home</a></li>
+    <li><a href="#about" class="hover:text-blue-500"><i class="fas fa-info-circle"></i> About</a></li>
+    <li><a href="#teams" class="hover:text-blue-500"><i class="fas fa-users"></i> Teams</a></li>
+    <li><a href="#contact" class="hover:text-blue-500"><i class="fas fa-envelope"></i> Contact</a></li>
+  </ul>
+  <div class="flex items-center space-x-3">
+    <input type="text" placeholder="Search..." id="topSearch" class="px-3 py-1 rounded border dark:bg-gray-700 dark:border-gray-600">
+    <button id="themeToggle" class="px-3 py-1 border rounded bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600">Dark/Light</button>
+    <button id="chatToggle" class="px-3 py-1 border rounded bg-blue-500 text-white hover:bg-blue-600">Chatbot</button>
+  </div>
+</nav>
+
+<!-- HOME SECTION -->
+<section id="home" class="pt-32 pb-20 bg-gradient-to-r from-blue-400 to-indigo-500 text-white text-center relative overflow-hidden">
+  <img src="https://via.placeholder.com/150x150/ffffff/000000?text=Icon1" class="absolute top-10 left-10 opacity-50 w-20 h-20" alt="Icon1">
+  <img src="https://via.placeholder.com/150x150/ffffff/000000?text=Icon2" class="absolute top-20 right-20 opacity-50 w-24 h-24" alt="Icon2">
+  <img src="https://via.placeholder.com/300x150/ffffff/000000?text=Picture1" class="mx-auto rounded-lg shadow-lg mb-6" alt="Picture1">
+  <h1 class="text-5xl font-bold mb-4 flex justify-center items-center space-x-3">
+    <i class="fas fa-smile-beam text-yellow-300"></i>
+    <span>Kusoo dhowoow Aqoonside Web</span>
+    <i class="fas fa-laptop-code text-green-300"></i>
+  </h1>
+  <p class="text-lg max-w-3xl mx-auto">Hel adeegyo casri ah, AI assistant, kutub barasho, iyo warbixinno si sahlan oo dhakhso leh.</p>
+</section>
+
+<!-- ABOUT SECTION -->
+<section id="about" class="py-20 bg-white dark:bg-gray-900 text-center">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-3xl font-bold mb-6 text-blue-600">About Aqoonside Web</h2>
+    <p class="text-lg mb-4">
+      Aqoonside Web waa madal digital ah oo isku xirta AI assistant, kutub barasho, warbixinno, iyo xog ururin online ah. Naqshad casri ah iyo interface sahlan ayaa ka dhigaya mid user-friendly.
+    </p>
+    <img src="https://via.placeholder.com/800x400" class="mx-auto rounded-lg shadow-lg" alt="About Aqoonside Web">
+  </div>
+</section>
+
+<!-- TEAMS SECTION -->
+<section id="teams" class="py-20 bg-gray-50 dark:bg-gray-900">
+  <div class="max-w-6xl mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-10 text-purple-600">Our Teams</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-white dark:bg-gray-800 p-6 rounded shadow hover:scale-105 transition-transform" data-aos="zoom-in">
+        <img src="https://source.unsplash.com/150x150/?person" class="mx-auto rounded-full mb-4" alt="Founder">
+        <h3 class="font-bold">Eng Abdiwali Mohamed Abukar</h3>
+        <p>Founder</p>
+      </div>
+      <div class="bg-white dark:bg-gray-800 p-6 rounded shadow hover:scale-105 transition-transform" data-aos="zoom-in" data-aos-delay="100">
+        <img src="https://source.unsplash.com/151x151/?person" class="mx-auto rounded-full mb-4" alt="CEO">
+        <h3 class="font-bold">Eng Mohamed Ali Abdi</h3>
+        <p>CEO</p>
+      </div>
+      <div class="bg-white dark:bg-gray-800 p-6 rounded shadow hover:scale-105 transition-transform" data-aos="zoom-in" data-aos-delay="200">
+        <img src="https://source.unsplash.com/152x152/?person" class="mx-auto rounded-full mb-4" alt="Team Member">
+        <h3 class="font-bold">John Doe</h3>
+        <p>Developer</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section id="why" class="py-20 bg-gradient-to-r from-green-100 to-green-200 dark:from-gray-800 dark:to-gray-900">
+  <div class="max-w-6xl mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-10 text-green-700">Why Choose Us</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="p-6 bg-white dark:bg-gray-800 rounded shadow hover:shadow-lg transition-shadow" data-aos="fade-right">
+        <i class="fas fa-check-circle text-blue-500 text-4xl mb-4"></i>
+        <h3 class="font-bold mb-2">Reliable</h3>
+        <p>Our platform is stable and trustworthy.</p>
+      </div>
+      <div class="p-6 bg-white dark:bg-gray-800 rounded shadow hover:shadow-lg transition-shadow" data-aos="fade-up">
+        <i class="fas fa-lightbulb text-yellow-400 text-4xl mb-4"></i>
+        <h3 class="font-bold mb-2">Innovative</h3>
+        <p>We integrate the latest technology.</p>
+      </div>
+      <div class="p-6 bg-white dark:bg-gray-800 rounded shadow hover:shadow-lg transition-shadow" data-aos="fade-left">
+        <i class="fas fa-headset text-green-500 text-4xl mb-4"></i>
+        <h3 class="font-bold mb-2">Support</h3>
+        <p>We offer 24/7 customer support.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LIBRARY & AI CHATBOT -->
+<section id="library" class="py-20 bg-purple-50 dark:bg-gray-900">
+  <div class="max-w-6xl mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-10 text-purple-700">Library & AI Chatbot</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="bg-white dark:bg-gray-800 p-6 rounded shadow hover:scale-105 transition-transform">
+        <i class="fas fa-book text-blue-500 text-4xl mb-4"></i>
+        <h3 class="font-bold mb-2">Programming Library</h3>
+        <p>All programming languages and resources available here.</p>
+      </div>
+      <div class="bg-white dark:bg-gray-800 p-6 rounded shadow hover:scale-105 transition-transform flex flex-col items-center">
+        <i class="fas fa-robot text-purple-500 text-4xl mb-4"></i>
+        <h3 class="font-bold mb-2">AI Chatbot</h3>
+        <p>Hidden by default. Click button to open.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRANSLATION & REPORTS -->
+<section id="translation" class="py-20 bg-yellow-50 dark:bg-gray-900">
+  <div class="max-w-6xl mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-10 text-yellow-700">Translation & Reports</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="bg-white dark:bg-gray-800 p-6 rounded shadow hover:shadow-lg transition-shadow">
+        <i class="fas fa-language text-red-500 text-4xl mb-4"></i>
+        <h3 class="font-bold mb-2">Translation</h3>
+        <p>Multi-language support placeholder.</p>
+      </div>
+      <div class="bg-white dark:bg-gray-800 p-6 rounded shadow hover:shadow-lg transition-shadow">
+        <i class="fas fa-file-alt text-yellow-500 text-4xl mb-4"></i>
+        <h3 class="font-bold mb-2">Reports</h3>
+        <p>Reports generation placeholder.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-20 bg-gray-100 dark:bg-gray-900">
+  <div class="max-w-6xl mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-10 text-blue-700">Contact Us</h2>
+    <form class="max-w-xl mx-auto grid grid-cols-1 gap-6">
+      <input type="text" placeholder="Name" class="p-3 rounded border dark:bg-gray-800 dark:border-gray-700">
+      <input type="email" placeholder="Email" class="p-3 rounded border dark:bg-gray-800 dark:border-gray-700">
+      <textarea placeholder="Message" class="p-3 rounded border dark:bg-gray-800 dark:border-gray-700"></textarea>
+      <button class="bg-blue-500 text-white p-3 rounded hover:bg-blue-600">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-white dark:bg-gray-900 py-6 text-center shadow">
+  <p>© 2026 Aqoonside Web. All rights reserved.</p>
+</footer>
+
+<!-- Chatbot hidden -->
+<div id="chatbotBox" class="fixed bottom-5 right-5 bg-white dark:bg-gray-800 p-4 rounded-lg shadow-lg w-80 max-w-full hidden">
+  <h3 class="font-bold mb-2 text-center text-blue-600">AI Chatbot</h3>
+  <div id="chatOutput" class="h-40 overflow-y-auto border dark:border-gray-700 p-2 mb-2 rounded"></div>
+  <input id="chatInput" type="text" placeholder="Ask anything..." class="w-full p-2 rounded border dark:bg-gray-700 dark:border-gray-600">
+  <button id="sendChat" class="mt-2 w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600">Send</button>
+</div>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+AOS.init({ duration: 1000, once: true });
+document.getElementById('themeToggle').addEventListener('click',()=>document.body.classList.toggle('dark'));
+const chatToggle=document.getElementById('chatToggle');
+const chatbotBox=document.getElementById('chatbotBox');
+chatToggle.addEventListener('click',()=>chatbotBox.classList.toggle('hidden'));
+document.getElementById('sendChat').addEventListener('click',()=>{
+  const input=document.getElementById('chatInput');
+  const output=document.getElementById('chatOutput');
+  const q=input.value.trim();
+  if(!q) return;
+  const userP=document.createElement('p');
+  userP.className='text-right text-blue-700'; userP.textContent=`You: ${q}`;
+  const botP=document.createElement('p');
+  botP.className='text-left text-gray-800'; botP.textContent='AI Response: placeholder (connect backend GPT + Google Search)';
+  output.appendChild(userP); output.appendChild(botP); input.value=''; output.scrollTop=output.scrollHeight;
+});
+</script>
+</body>
+</html>
